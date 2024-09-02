@@ -1,1 +1,125 @@
-/*:start
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4caf50;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 3px solid #388e3c;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #ffffff;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #388e3c;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 3px;
+    font-size: 1rem;
+    color: #388e3c;
+}
+
+input, select, button {
+    padding: 8px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input, select {
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Updated Submit Button */
+button {
+    background-color: #ff9800; /* Change to a bright orange */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 8px;
+    border: none;
+    width: 150px; /* Set a fixed width */
+    margin: 0 auto; /* Center the button */
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+
+#game-stats {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 6px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+th {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+caption {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #388e3c;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: #4caf50;
+    color: #ffffff;
+}

@@ -1,1 +1,70 @@
-<!-- Start -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortnite Game Stats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Fortnite Game Stats Tracker</h1>
+    </header>
+
+    <main>
+        <section id="akpg-header">
+            <div id="afz1219-akpg">AFZ1219 AKPG: Loading...</div>
+            <div id="lisan-akpg">Lisan-Al-Gaib AKPG: Loading...</div>
+        </section>
+
+        <section id="stat-entry">
+            <h2>Enter Your Stats</h2>
+            <form id="statsForm">
+                <div class="form-group">
+                    <label for="gamertag">Gamertag:</label>
+                    <select id="gamertag" required>
+                        <option value="AFZ1219">Ariel (AFZ1219)</option>
+                        <option value="Lisan-Al-Gaib">Lisan-Al-Gaib (Lisan-Al-Gaib)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gameId">Game ID:</label>
+                    <input type="text" id="gameId" required>
+                </div>
+                <div class="form-group">
+                    <label for="landingZone">Landing Zone:</label>
+                    <select id="landingZone" required>
+                        <option value="Lone Lodge">Lone Lodge</option>
+                        <option value="Snobby Shoals">Snobby Shoals</option>
+                        <option value="Pleasant Park">Pleasant Park</option>
+                        <option value="Tilted Towers">Tilted Towers</option>
+                        <option value="Lil’ Loot Lake">Lil’ Loot Lake</option>
+                        <option value="Sandy Sheets">Sandy Sheets</option>
+                        <option value="Retail Row">Retail Row</option>
+                        <option value="Lazy Laps">Lazy Laps</option>
+                        <option value="Dusty Dicks">Dusty Dicks</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="kills">Kills:</label>
+                    <input type="number" id="kills" required>
+                </div>
+                <button type="submit">Submit Stats</button>
+            </form>
+        </section>
+
+        <section id="game-stats">
+            <h2>Game Stats</h2>
+            <div id="statsContainer">
+                <p>Submit your stats to see the combined results.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fortnite Stats Tracker</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
